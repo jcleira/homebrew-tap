@@ -5,15 +5,15 @@
 class Workspace < Formula
   desc "CLI tool for managing multiple project workspaces"
   homepage "https://github.com/jcleira/workspace"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   depends_on "git" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jcleira/workspace/releases/download/v0.0.3/workspace_Darwin_x86_64.tar.gz"
-      sha256 "f6a3e7fadfa0d90dad688356f33da4a59e56a63ae0003e45ed8ebc4216bb9a69"
+      url "https://github.com/jcleira/workspace/releases/download/v0.0.4/workspace_Darwin_x86_64.tar.gz"
+      sha256 "b880a3857a35d9cb135fed31a964887130eb6ef7b7c91ff27246d1ce31bf2efe"
 
       def install
         bin.install "workspace"
@@ -24,8 +24,8 @@ class Workspace < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jcleira/workspace/releases/download/v0.0.3/workspace_Darwin_arm64.tar.gz"
-      sha256 "e17546ed68111a679c0bb812cd4e08db8cd78a31d143566d78b0a8923e4c6aa3"
+      url "https://github.com/jcleira/workspace/releases/download/v0.0.4/workspace_Darwin_arm64.tar.gz"
+      sha256 "816af6c8ee10635c0bb925c0bcd2a45854de7f118092f51ab846781d29b96852"
 
       def install
         bin.install "workspace"
@@ -39,8 +39,8 @@ class Workspace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jcleira/workspace/releases/download/v0.0.3/workspace_Linux_x86_64.tar.gz"
-      sha256 "acf79a1f22cc407473837b90432b11964f893570e7f768e47475545c2ff3f878"
+      url "https://github.com/jcleira/workspace/releases/download/v0.0.4/workspace_Linux_x86_64.tar.gz"
+      sha256 "216538b584b00ef08e4b9bff56e430ce4b5d72799b3bcd1b10a2e508024fa59b"
       def install
         bin.install "workspace"
 
@@ -50,8 +50,8 @@ class Workspace < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jcleira/workspace/releases/download/v0.0.3/workspace_Linux_arm64.tar.gz"
-      sha256 "b8a87d6cbcb341c7360b78b9b5b7639ca728ba8fefc46ad2666a1b51c00a6c10"
+      url "https://github.com/jcleira/workspace/releases/download/v0.0.4/workspace_Linux_arm64.tar.gz"
+      sha256 "84778c07db59b6f7fdbc9700f3da17be85ef35a11a73493af5f5ea3bd91ad4d3"
       def install
         bin.install "workspace"
 
